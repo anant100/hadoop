@@ -5,19 +5,19 @@ Configuring Hadoop API  ||  Work with Hadoop HDFS API  ||  Data Enrichment with 
 
 I use STM GTFS data set. In this project, we continue the practice of enrichment (the most common data transformation task to do). To download the dataset, visit http://www.stm.info/en/about/developers
 
-## Description 
+# Description 
 
-# Preparation
+## Preparation
 
 Put the files of trip, route and calendar on HDFS under /user/[group name]/[your name]/stm/ where [group name] is your class group for example summer2019 and [your name] is a name of your choice all in lowercase without space or any non-alphabetic character.
 
-# Enricher
+## Enricher
 
 Create project called hadoop to enrich route with trip based on route_id and then enrich the result with Calendar based on service_id. At the end, you should write the final result in a CSV file with a proper header.
 
 Apply required changes to read files from HDFS and write the result back to the HDFS. 
 
-# The followings are applied in project:
+## The followings are applied in project:
 
 •	You may read all the files in memory once and do the join as these files are small. It is encouraged to use STREAMING as a bonus.
 
