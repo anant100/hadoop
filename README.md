@@ -42,3 +42,5 @@ Enrichment with Streaming data sets by scala iterator
 
 # Output 
 Calendar & Route ---> Memory ---> DataStream (Trip) + Memory ---> EnrichedTrip
+
+------------- *** ---------------------
